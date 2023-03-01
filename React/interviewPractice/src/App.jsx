@@ -9,7 +9,8 @@ function App() {
 
   return (
     <div className='center'>
-      <Practice />
+      {/* <Practice /> */}
+      <Timer />
     </div>
   )
 }
