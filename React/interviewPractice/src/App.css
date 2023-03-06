@@ -15,7 +15,6 @@
 }
 .timer__input-number{
   display: grid;
-  /* justify-content: center; */
   gap:10px
 
 }
@@ -44,4 +43,17 @@ color: gray;
 .timer__buttons button{
   padding: 6px 12px;
   background-color: rgb(137, 137, 193);
+}
+
+
+
+
+.scroll__container--byRef section{
+  margin-top: 2rem;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  border: 5px solid purple;
 }
