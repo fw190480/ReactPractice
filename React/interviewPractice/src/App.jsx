@@ -5,6 +5,7 @@ import Timer from './components/Timer'
 import CounterClass from './components/CounterClassComponent'
 import Practice from './components/Practice'
 import ScrollByUseRef from './components/ScrollByUseRef'
+import TypingTest from './components/TypingTest';
 
 function App() {
 
@@ -12,7 +13,8 @@ function App() {
     <div className='center'>
       {/* <Practice /> */}
       {/* <Timer /> */}
-      <ScrollByUseRef />
+      {/* <ScrollByUseRef /> */}
+      <TypingTest />
     </div>
   )
 }
