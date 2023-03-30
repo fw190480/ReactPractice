@@ -3,10 +3,31 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* todoList */
+
+.todoList-item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+/* Todo result */
+.todoResult{
+    padding: 1rem;
+    background-color: rgb(213, 199, 199);
+}
+.todoResult span{
+    padding-left: 1rem;
+    font-size: 1.3rem;
+}
 /* Todo input components */
 .todo-input{
     display: flex;
     align-items: center;
     gap: 1rem;
     padding: 10px 12px;
+}
+
+.line-through{
+    text-decoration: line-through;
 }
