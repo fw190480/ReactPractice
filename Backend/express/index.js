@@ -13,12 +13,12 @@ const findTheReq = (req,res,next)=>{
     console.log(req.url);
     next();
 }
-// const Middlware3 = (req,res,next)=>{
-//     console.log("MIddleware3");
-//     next()
-// }
+const Middlware3 = (req,res,next)=>{
+    console.log("MIddleware3");
+    next()
+}
 
-app.use(Middlware1,findTheReq);
+app.use(Middlware1);
 
 app.get('/',Middlware2,(req,res)=>{
     console.log("I am inise");
