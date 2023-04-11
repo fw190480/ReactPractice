@@ -11,6 +11,7 @@ const Middlware2 = (req,res,next)=>{
 }
 const findTheReq = (req,res,next)=>{
     console.log(req.url);
+    next();
 }
 // const Middlware3 = (req,res,next)=>{
 //     console.log("MIddleware3");
