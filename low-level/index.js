@@ -57,7 +57,36 @@ class MeetingRoom{
     };
     get capacity(){
         return this.#capacity;
+    };
+    set changeCapacity(newCapacity) {
+        this.#capacity = newCapacity;
+    };
+
+    addSlot(slot) {
+        this.#slots.add(slot);
     }
+};
+
+// FLOOR
+class Floor{
+    #name;
+    #meetingRooms;
+    constructor(name){
+        this.#name = name;
+        this.#meetingRooms = [];
+    };
+    get floorName(){
+        return this.#name;
+    };
+
+    addMeetingRoom(newRoom){
+        if(this.doesMeetingRoomExist(newRoom)){
+            this.#meetingRooms.push(newRoom)
+        }
+    };
+    doesMeetingRoomExist(meetingRoom){
+        return this.#meetingRooms.some((room) => room.name===meetingRoom.room)
+    };
 }
 
 // let s1 = new Slot(1,3)
