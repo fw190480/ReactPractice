@@ -6,6 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice Positions</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            width: 100%;
+            position: fixed;
+            top: 0;
+            color: gray;
+            background:burlywood;
+        }
+        header ul li{
+            float: left;
+            list-style: none;
+            margin: 1rem;
+            font-family: cursive;
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+    
+        }
+        header ul li:hover{
+            color: red;
+        }
+        .clear{
+            clear: both;
+        }
+        main{
+            margin-top: 5rem;
+            /* position: relative; */
+            /* border: 1px solid green; */
+            /* height: 10rem; */
+            overflow: scroll;
+            background-color: greenyellow;
+            
+        }
+        main aside{
+            position: absolute;
+            left: 0;
+            width: 20rem;
+            /* border: 2px solid purple */
+        };
+        #right-side{ 
+            width: 15rem !important ;
+            /* height: 15rem; */
+          padding: 3rem;
+          position: absolute;
+          right: 1rem;
+          background-color: green;
+          border: 2px solid black;
+    
+        }
+        img{
+            width: 25rem;
+            position: absolute;
+            right: 10px;
+        }
+        footer{
+            padding: 2rem;
+            width: 100%;
+            position:fixed;
+            bottom:0;
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,12 +81,22 @@
             <li>Home</li>
             <li>About</li>
             <li>Blogs</li>
-            <li>Partners</li>
             <li>ContactUs</li>
         </ul>
     </header>
+    <div class="clear"></div>
     <main>
+        <aside>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quos sunt aliquid? Quam enim quos iusto quisquam voluptate eum in libero perferendis natus officiis, soluta commodi repellendus veritatis aspernatur suscipit veniam recusandae optio quaerat doloremque ab, eius sunt earum? Excepturi ducimus corporis similique labore dolores aliquam? Iste minima natus, aut cum nemo voluptatibus reprehenderit cumque aliquam eos quisquam nihil porro quas vitae vel temporibus itaque beatae. Perspiciatis voluptas autem dicta hic itaque tempore modi minima nihil. Assumenda ipsa, voluptatum natus enim quos numquam. Neque cum mollitia culpa eligendi cupiditate accusamus, autem, quam assumenda aut, incidunt minima? Pariatur expedita enim ut adipisci. Rerum illum maiores quidem nisi facere est voluptate earum totam cum non, quis fugit! Harum, esse quisquam sed eaque exercitationem ab voluptas maxime animi, ex iusto, incidunt ipsam est laboriosam voluptatibus nostrum architecto tenetur expedita? Reiciendis harum ex et cumque ad distinctio perferendis voluptate ea architecto a, sint nulla facilis itaque animi accusamus, totam tempora. Nisi rem modi provident pariatur repellendus accusamus fuga quisquam excepturi repellat architecto amet voluptates at esse dolor, neque facere sed. Maxime modi cum ut itaque. Quis placeat, voluptatibus recusandae cum harum fugiat repellat quos quam soluta, vitae rerum, sint rem quia explicabo nobis mollitia!
+        </aside>
+        <section id="right-side">
+            <!-- Images -->
+            <div class="top-right">
+                <img src="https://cdn.pixabay.com/photo/2012/10/29/15/36/ball-63527__340.jpg" alt="Code image">
+                
+            </div>
 
+        </section>
     </main>
     <footer>
         <p>Copyright © 2023 My Website</p>
