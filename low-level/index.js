@@ -80,7 +80,7 @@ class Floor{
     };
 
     addMeetingRoom(newRoom){
-        if(this.doesMeetingRoomExist(newRoom)){
+        if(!this.doesMeetingRoomExist(newRoom)){
             this.#meetingRooms.push(newRoom)
         }
     };
