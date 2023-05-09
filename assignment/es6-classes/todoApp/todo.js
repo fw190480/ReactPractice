@@ -22,12 +22,14 @@ class Todo {
         this.renderTodo()
         todoDataEle.value = ""
     }
-    removeTodo() {
-
+    removeTodo(index) {
+        this.#task.splice(index,1);
+        this.renderTodo()
     }
 
-    toggleStatus() {
-
+    toggleStatus(index) {
+        this.#task[index].completed = !this.#task[index].completed;
+        this.renderTodo()
     }
 
     renderTodo() {
@@ -37,16 +39,25 @@ class Todo {
         this.#task.forEach((item,index) => {
             let list = document.createElement('li');
             let text = document.createElement('span')
-            text.innerText = item.task;
+            text.innerText = `${index+1}:) ${item.task}`;
+            if(item.completed){
+                list.style.background = "green";
+                // list.classList.add('checked')
+            }
             let checkbox = document.createElement('input');
             checkbox.type = 'checkbox'
             checkbox.checked = item.completed
             // for toggle checkbox
             checkbox.addEventListener('change',()=>{
-                this.#task[index].completed=!this.#task[index].completed
+                this.toggleStatus(index)
             });
-
-            list.append(text,checkbox);
+            // Remove button
+            let removeBtn = document.createElement('button');
+            removeBtn.innerText = "Remove";
+            removeBtn.addEventListener('click',()=>{
+                this.removeTodo(index)
+            })
+            list.append(text,checkbox,removeBtn);
             container.append(list);
       })
     }

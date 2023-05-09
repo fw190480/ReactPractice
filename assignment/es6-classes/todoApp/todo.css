@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+
+.checked{
+    /* color:green; */
+    background-color: green;
+}
+h1{
+    text-align: center;
+    color: gray;
+    font-family: cursive;
+    margin-bottom: 2rem;
+}
+
+.task_input{
+    display: flex;
+    gap: 1rem;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+}
+.task_input input , .task_input button{
+    padding: 5px 10px;
+    font-size: 18px;
+}
+.appendTask{
+    padding: 2rem 5rem;
+}
+.appendTask li{
+    display: flex;
+    /* width: 80%; */
+    justify-content: center;
+    margin: auto;
+    gap: 15px;
+    padding: 10px;
+    background-color: aliceblue;
+    margin: 3px;
+    transition: all .2s ease-in-out;
+}
+.appendTask span{
+    font-size: 18px;
+    font-family: cursive;
+    font-weight: bold;
+
+}
+.appendTask button{
+    outline: none;
+    border: none;
+    background-color: red;
+    padding: 4px 6px;
+    color: white;
+
+}
